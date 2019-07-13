@@ -14,7 +14,7 @@ def reduce(source_array, starting_point = nil)
     sum = source_array[0]
     i = 1
   end
-  
+
   while i < s.length
     accum = yield(accum, s[i])
     i += 1
