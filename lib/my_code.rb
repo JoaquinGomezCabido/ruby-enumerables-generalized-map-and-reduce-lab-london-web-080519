@@ -6,7 +6,7 @@ def map(source_array)
   }
 end
 
-def reduce(source_array, starting_point = nil)
+def reduce(source_array, starting_point = 0)
   source_array.reduce(starting_point) { |sum, element|
     yield(sum, element)
   }
